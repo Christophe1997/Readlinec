@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Include="Context.fsi" />
+      <Compile Include="Converter.fsi" />
+    </ItemGroup>
+
+</Project>

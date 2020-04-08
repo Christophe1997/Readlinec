@@ -5,6 +5,8 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Compile Include="Buffer.fsi" />
+      <Compile Include="History.fsi" />
       <Compile Include="Context.fsi" />
       <Compile Include="Converter.fsi" />
       <Compile Include="CSI.fsi" />

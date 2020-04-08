@@ -1,8 +1,10 @@
 namespace Readlinec
 
-type 'a Converter =
-  { convert: Context * 'a -> Context }
+type Converter =
+  { convert: Context -> Context }
   
 module Converter =
-  val empty: 'a Converter
-  
+  val empty: Converter
+  val seq: Converter list -> Converter
+  val ifElse:  ('a -> bool) -> Converter -> Converter -> 'a -> Converter
+  val dict: Map<'a, Converter> -> 'a -> Converter

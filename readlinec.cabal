@@ -1,0 +1,53 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 8af783ab8266b9a9745b7021cb60aba3277dda8cd547ff3c00cc8224d4879940
+
+name:           readlinec
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/Christophe1997/readlinec#readme>
+homepage:       https://github.com/Christophe1997/readlinec#readme
+bug-reports:    https://github.com/Christophe1997/readlinec/issues
+author:         Christophe Shen
+maintainer:     hey_christophe@outlook.com
+copyright:      Christophe Shen
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/Christophe1997/readlinec
+
+library
+  exposed-modules:
+      Readlinec
+      Readlinec.Buffer
+      Readlinec.Context
+      Readlinec.ListZipper
+  other-modules:
+      Paths_readlinec
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+test-suite readlinec-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_readlinec
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , readlinec
+  default-language: Haskell2010

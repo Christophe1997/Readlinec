@@ -1,8 +1,10 @@
 {-# LANGUAGE FunctionalDependencies #-}
 
-module Readlinec.ListZipper
+module Readlinec.Zipper
        (
-        
+        Zipper, ListZipper
+        , mvForward, mvBack, reset
+        , insert, overtype, backspace, delete
        ) where
 
 -- | A zipper is the cursor on the origin type

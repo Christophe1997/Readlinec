@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 8af783ab8266b9a9745b7021cb60aba3277dda8cd547ff3c00cc8224d4879940
+-- hash: 348b1a10694b119773ec1683edc77db496c3078e3ae9605568f06a4ac10eb10d
 
 name:           readlinec
 version:        0.1.0.0
@@ -30,7 +30,7 @@ library
       Readlinec
       Readlinec.Buffer
       Readlinec.Context
-      Readlinec.ListZipper
+      Readlinec.Zipper
   other-modules:
       Paths_readlinec
   hs-source-dirs:

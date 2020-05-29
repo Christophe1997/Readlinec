@@ -3,7 +3,7 @@
 module Readlinec.Zipper
        (
         Zipper(..) 
-        , ListZipper(..)
+        , ListZipper
         , mvForward, mvBack, reset
         , insert, overtype, backspace, delete
        ) where
